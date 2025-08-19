@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenc | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="gradient-bg text-white font-[Poppins]">
+    <header class="glass fixed w-full top-0 z-50 transition-smooth">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#home" class="text-2xl font-bold">
+          <i class="fas fa-code mr-2"></i>Zenc
+        </a>
+        <nav class="space-x-6">
+          <a href="#about" class="hover:text-green-300 transition-smooth"
+            >About</a
+          >
+          <a href="#projects" class="hover:text-green-300 transition-smooth"
+            >Projects</a
+          >
+          <a href="#contact" class="hover:text-green-300 transition-smooth"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center px-6"
+    >
+      <div
+        class="glass p-12 rounded-2xl max-w-2xl text-center hover-lift transition-smooth"
+      >
+        <img
+          src="asset/zenc.jpg"
+          alt="Zenc"
+          class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-red-800"
+        />
+        <h1
+          class="text-4xl font-bold mb-4 bg-gradient-to-r from-red-900 to-yellow-300 bg-clip-text text-transparent"
+        >
+          Dhimas Admaja
+        </h1>
+        <p class="text-xl text-gray-300 mb-8">
+          Mahasiswa | Web Developer | Tech Enthusiast
+        </p>
+        <div class="space-x-4">
+          <a
+            href="https://instagram.com/dhimas_add"
+            target="_blank"
+            class="inline-flex items-center px-6 py-3 bg-pink-600 rounded-full hover-lift transition-smooth"
+          >
+            <i class="fab fa-instagram mr-2"></i>Instagram
+          </a>
+          <a
+            href="https://github.com/RyuZenc"
+            target="_blank"
+            class="inline-flex items-center px-6 py-3 bg-gray-700 rounded-full hover-lift transition-smooth"
+          >
+            <i class="fab fa-github mr-2"></i>GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 px-6">
+      <div class="container mx-auto max-w-4xl">
+        <div class="glass p-10 rounded-2xl hover-lift transition-smooth">
+          <h2
+            class="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-red-900 to-yellow-300 bg-clip-text text-transparent"
+          >
+            <i class="fas fa-user mr-3"></i>About Me
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <p class="text-gray-300 mb-4">
+                🚀 Saya seorang mahasiswa yang tertarik dengan pengembangan web.
+                Suka belajar teknologi baru, membangun project kecil, dan
+                berkontribusi dalam komunitas programming.
+              </p>
+              <p class="text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis cumque animi, laudantium, illum eum maxime ab sed
+                placeat, ratione alias modi dolorem expedita maiores minus.
+                Aperiam dolorem debitis perferendis? Pariatur!
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <span class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="fas fa-laptop-code text-green-400"></i>
+                </span>
+                <span>Web Development</span>
+              </div>
+
+              <div class="flex items-center">
+                <span class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="fas fa-graduation-cap text-blue-400"></i>
+                </span>
+                <span>Universitas Dinamika Bangsa</span>
+              </div>
+
+              <div class="flex items-center">
+                <span class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="fas fa-map-marker-alt text-red-400"></i>
+                </span>
+                <span>Jambi, Indonesia</span>
+              </div>
+
+              <div class="flex items-center">
+                <span class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="fas fa-map-marker-alt text-red-400"></i>
+                </span>
+                <span>Jambi, Indonesia</span>
+              </div>
+
+              <div class="flex items-center">
+                <span class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="fas fa-map-marker-alt text-red-400"></i>
+                </span>
+                <span>Jambi, Indonesia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-20 px-6">
+      <div class="container mx-auto max-w-6xl">
+        <h2
+          class="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-red-900 to-yellow-300 bg-clip-text text-transparent"
+        >
+          <i class="fas fa-rocket mr-3"></i>My Projects
+        </h2>
+        <div id="projects-list" class="grid md:grid-cols-3 gap-8"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6">
+      <div class="container mx-auto max-w-2xl">
+        <div
+          class="glass p-10 rounded-2xl text-center hover-lift transition-smooth"
+        >
+          <h2
+            class="text-3xl font-bold mb-8 bg-gradient-to-r from-red-900 to-yellow-300 bg-clip-text text-transparent"
+          >
+            <i class="fas fa-envelope mr-3"></i>Get In Touch
+          </h2>
+          <p class="text-gray-300 text-lg mb-8">
+            Let's connect and create something amazing together!
+          </p>
+          <div class="space-y-6">
+            <a
+              href="mailto:bs.dhimas@gmail.com"
+              class="flex items-center justify-center space-x-3 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-full transition-smooth"
+            >
+              <i class="fas fa-envelope"></i>
+              <span>bs.dhimas@gmail.com</span>
+            </a>
+            <div class="flex justify-center space-x-6">
+              <a
+                href="https://instagram.com/dhimas_add"
+                target="_blank"
+                class="text-pink-400 hover:text-pink-300 text-2xl transition-smooth"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://github.com/RyuZenc"
+                target="_blank"
+                class="text-gray-400 hover:text-gray-300 text-2xl transition-smooth"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send/?phone=0895632919646&text&type=phone_number&app_absent=0"
+                target="_blank"
+                class="text-gray-400 hover:text-gray-300 text-2xl transition-smooth"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="glass py-8 text-center">
+      <div class="container mx-auto px-6">
+        <p class="text-gray-200">
+          Created with <span class="text-red-400">❤️</span> by
+          <a href="https://instagram.com/dhimas_add" target="_blank">Me.</a>
+        </p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

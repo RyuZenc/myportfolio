@@ -1,0 +1,38 @@
+[
+  {
+    "icon": "fas fa-utensils text-4xl text-orange-400 mb-4",
+    "title": "Lorem",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "tag": "Lorem"
+  },
+  {
+    "icon": "fas fa-utensils text-4xl text-orange-400 mb-4",
+    "title": "Lorem",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "tag": "Lorem"
+  },
+  {
+    "icon": "fas fa-utensils text-4xl text-orange-400 mb-4",
+    "title": "Lorem",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "tag": "Lorem"
+  },
+  {
+    "icon": "fas fa-utensils text-4xl text-orange-400 mb-4",
+    "title": "Lorem",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "tag": "Lorem"
+  },
+  {
+    "icon": "fas fa-utensils text-4xl text-orange-400 mb-4",
+    "title": "Lorem",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "tag": "Lorem"
+  },
+  {
+    "icon": "fas fa-utensils text-4xl text-orange-400 mb-4",
+    "title": "Lorem",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "tag": "Lorem"
+  }
+]
