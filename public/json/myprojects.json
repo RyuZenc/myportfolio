@@ -1,0 +1,44 @@
+[
+  {
+    "icon": "fas fa-laptop-code",
+    "title": "Portfolio Website",
+    "desc": "Personal portfolio website built with HTML, CSS, and JavaScript featuring responsive design and modern UI.",
+    "tag": "HTML",
+    "link": "https://github.com/RyuZenc"
+  },
+  {
+    "icon": "fas fa-globe",
+    "title": "Web Development Projects",
+    "desc": "Collection of web development projects showcasing various technologies and frameworks.",
+    "tag": "JS",
+    "link": "https://github.com/RyuZenc"
+  },
+  {
+    "icon": "fas fa-code",
+    "title": "Learning Projects",
+    "desc": "Various coding projects and experiments while learning new technologies and concepts.",
+    "tag": "CSS",
+    "link": "https://github.com/RyuZenc"
+  },
+  {
+    "icon": "fas fa-code",
+    "title": "Learning Projects",
+    "desc": "Various coding projects and experiments while learning new technologies and concepts.",
+    "tag": "React",
+    "link": "https://github.com/RyuZenc"
+  },
+  {
+    "icon": "fas fa-code",
+    "title": "Learning Projects",
+    "desc": "Various coding projects and experiments while learning new technologies and concepts.",
+    "tag": "Python",
+    "link": "https://github.com/RyuZenc"
+  },
+  {
+    "icon": "fas fa-code",
+    "title": "Learning Projects",
+    "desc": "Various coding projects and experiments while learning new technologies and concepts.",
+    "tag": "PHP",
+    "link": "https://github.com/RyuZenc"
+  }
+]

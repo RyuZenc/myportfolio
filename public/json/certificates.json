@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Belajar Dasar Web",
+    "issuer": "Penerbit contoh",
+    "year": "2025",
+    "link": ""
+  },
+  {
+    "title": "JavaScript Fundamental",
+    "issuer": "Penerbit contoh",
+    "year": "2025",
+    "link": ""
+  },
+  {
+    "title": "React Dasar",
+    "issuer": "Penerbit contoh",
+    "year": "2026",
+    "link": ""
+  },
+  {
+    "title": "Git dan Version Control",
+    "issuer": "Penerbit contoh",
+    "year": "2026",
+    "link": ""
+  },
+  {
+    "title": "Responsive Web Design",
+    "issuer": "Penerbit contoh",
+    "year": "2025",
+    "link": ""
+  },
+  {
+    "title": "Node.js Dasar",
+    "issuer": "Penerbit contoh",
+    "year": "2026",
+    "link": ""
+  },
+  {
+    "title": "Dasar UI/UX",
+    "issuer": "Penerbit contoh",
+    "year": "2026",
+    "link": ""
+  },
+  {
+    "title": "Dasar Data Analytics",
+    "issuer": "Penerbit contoh",
+    "year": "2026",
+    "link": ""
+  }
+]

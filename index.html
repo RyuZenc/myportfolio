@@ -1,212 +1,265 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zenc | Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta
+      name="description"
+      content="Portofolio Dhimas Admaja — Fullstack Developer."
+    />
+    <title>Zenc | Portofolio</title>
+    <link rel="icon" href="images/favicon.ico" sizes="any" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="gradient-bg text-white font-[Poppins]">
-    <header class="glass fixed w-full top-0 z-50 transition-smooth">
-      <div
-        class="container mx-auto px-6 py-4 flex justify-between items-center"
-      >
-        <a href="#home" class="text-2xl font-bold">
-          <i class="fas fa-code mr-2"></i>Zenc
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="brand" aria-label="Zenc, ke atas">
+          <span class="brand-mark"></span>ZENC
         </a>
-        <nav class="space-x-6">
-          <a href="#about" class="hover:text-green-300 transition-smooth"
-            >About</a
-          >
-          <a href="#projects" class="hover:text-green-300 transition-smooth"
-            >Projects</a
-          >
-          <a href="#contact" class="hover:text-green-300 transition-smooth"
-            >Contact</a
-          >
+        <button
+          id="menu-btn"
+          class="menu-btn"
+          aria-label="Buka menu navigasi"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="menu" class="nav" role="navigation" aria-label="Menu utama">
+          <a href="#about">Tentang</a>
+          <a href="#projects">Proyek</a>
+          <a href="#certificates">Sertifikat</a>
+          <a href="#contact">Kontak</a>
         </nav>
       </div>
     </header>
 
-    <section
-      id="home"
-      class="min-h-screen flex items-center justify-center px-6"
-    >
-      <div
-        class="glass p-12 rounded-2xl max-w-2xl text-center hover-lift transition-smooth"
-      >
-        <img
-          src="asset/zenc.jpg"
-          alt="Zenc"
-          class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-red-800"
-        />
-        <h1
-          class="text-4xl font-bold mb-4 bg-gradient-to-r from-red-900 to-yellow-300 bg-clip-text text-transparent"
-        >
-          Dhimas Admaja
-        </h1>
-        <p class="text-xl text-gray-300 mb-8">
-          Mahasiswa | Web Developer | Tech Enthusiast
-        </p>
-        <div class="space-x-4">
-          <a
-            href="https://instagram.com/dhimas_add"
-            target="_blank"
-            class="inline-flex items-center px-6 py-3 bg-pink-600 rounded-full hover-lift transition-smooth"
-          >
-            <i class="fab fa-instagram mr-2"></i>Instagram
-          </a>
-          <a
-            href="https://github.com/RyuZenc"
-            target="_blank"
-            class="inline-flex items-center px-6 py-3 bg-gray-700 rounded-full hover-lift transition-smooth"
-          >
-            <i class="fab fa-github mr-2"></i>GitHub
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="py-20 px-6">
-      <div class="container mx-auto max-w-4xl">
-        <div class="glass p-10 rounded-2xl hover-lift transition-smooth">
-          <h2
-            class="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-red-900 to-yellow-300 bg-clip-text text-transparent"
-          >
-            <i class="fas fa-user mr-3"></i>About Me
-          </h2>
-          <div class="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <p class="text-gray-300 mb-4">
-                🚀 Saya seorang mahasiswa yang tertarik dengan pengembangan web.
-                Suka belajar teknologi baru, membangun project kecil, dan
-                berkontribusi dalam komunitas programming.
-              </p>
-              <p class="text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis cumque animi, laudantium, illum eum maxime ab sed
-                placeat, ratione alias modi dolorem expedita maiores minus.
-                Aperiam dolorem debitis perferendis? Pariatur!
-              </p>
-            </div>
-            <div class="space-y-4">
-              <div class="flex items-center">
-                <span class="w-5 h-5 flex items-center justify-center mr-3">
-                  <i class="fas fa-laptop-code text-green-400"></i>
-                </span>
-                <span>Web Development</span>
-              </div>
-
-              <div class="flex items-center">
-                <span class="w-5 h-5 flex items-center justify-center mr-3">
-                  <i class="fas fa-graduation-cap text-blue-400"></i>
-                </span>
-                <span>Universitas Dinamika Bangsa</span>
-              </div>
-
-              <div class="flex items-center">
-                <span class="w-5 h-5 flex items-center justify-center mr-3">
-                  <i class="fas fa-map-marker-alt text-red-400"></i>
-                </span>
-                <span>Jambi, Indonesia</span>
-              </div>
-
-              <div class="flex items-center">
-                <span class="w-5 h-5 flex items-center justify-center mr-3">
-                  <i class="fas fa-map-marker-alt text-red-400"></i>
-                </span>
-                <span>Jambi, Indonesia</span>
-              </div>
-
-              <div class="flex items-center">
-                <span class="w-5 h-5 flex items-center justify-center mr-3">
-                  <i class="fas fa-map-marker-alt text-red-400"></i>
-                </span>
-                <span>Jambi, Indonesia</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="py-20 px-6">
-      <div class="container mx-auto max-w-6xl">
-        <h2
-          class="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-red-900 to-yellow-300 bg-clip-text text-transparent"
-        >
-          <i class="fas fa-rocket mr-3"></i>My Projects
-        </h2>
-        <div id="projects-list" class="grid md:grid-cols-3 gap-8"></div>
-      </div>
-    </section>
-
-    <section id="contact" class="py-20 px-6">
-      <div class="container mx-auto max-w-2xl">
-        <div
-          class="glass p-10 rounded-2xl text-center hover-lift transition-smooth"
-        >
-          <h2
-            class="text-3xl font-bold mb-8 bg-gradient-to-r from-red-900 to-yellow-300 bg-clip-text text-transparent"
-          >
-            <i class="fas fa-envelope mr-3"></i>Get In Touch
-          </h2>
-          <p class="text-gray-300 text-lg mb-8">
-            Let's connect and create something amazing together!
-          </p>
-          <div class="space-y-6">
-            <a
-              href="mailto:bs.dhimas@gmail.com"
-              class="flex items-center justify-center space-x-3 bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-full transition-smooth"
-            >
-              <i class="fas fa-envelope"></i>
-              <span>bs.dhimas@gmail.com</span>
-            </a>
-            <div class="flex justify-center space-x-6">
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>Dhimas<br /><span class="outline">Admaja</span></h1>
+            <p class="lead">
+              Full-Stack Developer yang tertarik membangun aplikasi web
+              interaktif dan nyaman digunakan.
+            </p>
+            <div class="actions">
               <a
-                href="https://instagram.com/dhimas_add"
-                target="_blank"
-                class="text-pink-400 hover:text-pink-300 text-2xl transition-smooth"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a
+                class="btn btn-solid"
                 href="https://github.com/RyuZenc"
                 target="_blank"
-                class="text-gray-400 hover:text-gray-300 text-2xl transition-smooth"
+                rel="noopener noreferrer"
               >
-                <i class="fab fa-github"></i>
+                <i class="fab fa-github" aria-hidden="true"></i>GitHub
               </a>
               <a
-                href="https://api.whatsapp.com/send/?phone=0895632919646&text&type=phone_number&app_absent=0"
+                class="btn btn-ghost"
+                href=""
                 target="_blank"
-                class="text-gray-400 hover:text-gray-300 text-2xl transition-smooth"
+                rel="noopener noreferrer"
               >
-                <i class="fab fa-whatsapp"></i>
+                <i class="fa-solid fa-plus" aria-hidden="true"></i>Button
               </a>
             </div>
           </div>
+          <figure class="photo">
+            <img
+              src="images/zenc.jpg"
+              alt="Foto Dhimas Admaja"
+              width="360"
+              height="450"
+            />
+            <figcaption class="sticker">
+              <button type="button" class="sticker-btn">
+                Salam<br />kenal!
+              </button>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span
+            ><span>React</span><span>PHP</span><span>Python</span
+            ><span>Git</span><span>Vite</span>
+          </div>
+          <div class="marquee-group">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span
+            ><span>React</span><span>PHP</span><span>Python</span
+            ><span>Git</span><span>Vite</span>
+          </div>
         </div>
       </div>
-    </section>
 
-    <footer class="glass py-8 text-center">
-      <div class="container mx-auto px-6">
-        <p class="text-gray-200">
-          Created with <span class="text-red-400">❤️</span> by
-          <a href="https://instagram.com/dhimas_add" target="_blank">Me.</a>
-        </p>
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title" data-reveal>Tentang saya</h2>
+          <div class="about-grid">
+            <p class="statement" data-reveal>
+              Saya belajar hal baru dengan cara langsung membangunnya.
+            </p>
+            <div data-reveal-stagger>
+              <p>
+                Tertarik dengan dunia web development sejak 2020. Saya suka
+                membangun aplikasi web yang interaktif, fungsional, dan nyaman
+                digunakan. Bagi saya, pengalaman pengguna merupakan bagian
+                penting dalam membangun aplikasi web.
+              </p>
+
+              <p>
+                Memiliki pengalaman di bidang IT dan web development. Saya juga
+                senang mempelajari hal-hal baru, terutama yang berkaitan dengan
+                teknologi dan pengembangan web.
+              </p>
+              <dl class="facts">
+                <div class="fact">
+                  <dt>Kampus</dt>
+                  <dd>Universitas Dinamika Bangsa</dd>
+                </div>
+
+                <div class="fact">
+                  <dt>Lokasi</dt>
+                  <dd>Jambi, Indonesia</dd>
+                </div>
+
+                <div class="fact">
+                  <dt>Fokus</dt>
+                  <dd>IT & Web Development</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="projects-head" data-reveal>
+            <h2 class="section-title">Proyek</h2>
+            <div class="pager">
+              <button
+                id="prev-btn"
+                class="pager-btn hidden"
+                aria-label="Proyek sebelumnya"
+              >
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+              </button>
+              <button
+                id="next-btn"
+                class="pager-btn hidden"
+                aria-label="Proyek berikutnya"
+              >
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div id="projects-list" class="projects-grid"></div>
+        </div>
+      </section>
+
+      <section id="certificates" class="section">
+        <div class="container">
+          <div class="projects-head" data-reveal>
+            <h2 class="section-title">Sertifikat</h2>
+            <div class="pager">
+              <button
+                id="cert-prev-btn"
+                class="pager-btn hidden"
+                aria-label="Sertifikat sebelumnya"
+              >
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+              </button>
+              <button
+                id="cert-next-btn"
+                class="pager-btn hidden"
+                aria-label="Sertifikat berikutnya"
+              >
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <p class="section-lead" data-reveal>
+            Pelatihan dan kursus yang pernah saya ikuti.
+          </p>
+          <div id="certificates-list"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="contact-title" data-reveal>
+            Mari bikin sesuatu yang keren.
+          </h2>
+          <p class="lead" data-reveal>
+            Punya ide, proyek, atau cuma mau ngobrol soal web? Kabarin aja.
+          </p>
+          <a class="email-link" href="mailto:bs.dhimas@gmail.com" data-reveal
+            >bs.dhimas@gmail.com</a
+          >
+          <div class="socials" data-reveal-stagger>
+            <a
+              class="social social-ig"
+              href="https://instagram.com/dhimas_add"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a
+              class="social social-gh"
+              href="https://github.com/RyuZenc"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a
+              class="social social-wa"
+              href="https://api.whatsapp.com/send/?phone=6285632919646&text=Hello!&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Made with passion.</p>
+        <a href="#home">Ke atas</a>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
