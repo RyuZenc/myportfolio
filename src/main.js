@@ -1,4 +1,5 @@
-import { animate, stagger, utils } from "animejs";
+import { animate, scrambleText, stagger, utils } from "animejs";
+import { openScrambleOverlay } from "./scramble-overlay.js";
 import "./style.css";
 
 const reduceMotion = matchMedia(
@@ -36,9 +37,26 @@ const stickerBtn = document.querySelector(".sticker-btn");
 
 if (stickerBtn) {
   const hello = new Audio("sounds/salam-kenal/obi-wan-hello-there.mp3");
+  const labels = [
+    [3, "Hello!"],
+    [6, "Hello?!"],
+    [Infinity, "Halo?!"],
+  ];
+  let presses = 0;
+  const needed = 10; // 10 tekan
+
   stickerBtn.addEventListener("click", () => {
     hello.currentTime = 0;
     hello.play().catch(() => {});
+
+    presses += 1;
+    stickerBtn.textContent = labels.find(([limit]) => presses < limit)[1];
+
+    if (presses >= needed) {
+      presses = 0;
+      stickerBtn.textContent = "Hello!";
+      openScrambleOverlay();
+    }
   });
 }
 
@@ -53,6 +71,88 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+/* ---------- scroll progress ---------- */
+
+const progressBar = document.querySelector(".scroll-progress");
+
+if (progressBar) {
+  const updateProgress = () => {
+    const doc = document.documentElement;
+    const max = doc.scrollHeight - doc.clientHeight;
+    const progress = max > 0 ? doc.scrollTop / max : 0;
+    progressBar.style.transform = `scaleX(${progress})`;
+  };
+
+  addEventListener("scroll", updateProgress, { passive: true });
+  addEventListener("resize", updateProgress);
+  updateProgress();
+}
+
+/* ---------- marquee glitch ---------- */
+
+const marquee = document.querySelector(".marquee");
+const GLITCH_CHARS = "!<>-_\\/[]{}=+*^?#%&$@01";
+const marqueeSpans = marquee ? [...marquee.querySelectorAll("span")] : [];
+
+function freezeMarqueeWidths() {
+  marqueeSpans.forEach((span) => {
+    if (!span.classList.contains("glitching")) span.style.width = "";
+  });
+  requestAnimationFrame(() => {
+    marqueeSpans.forEach((span) => {
+      if (!span.classList.contains("glitching")) {
+        span.style.width = `${span.offsetWidth}px`;
+      }
+    });
+  });
+}
+
+(document.fonts?.ready ?? Promise.resolve()).then(freezeMarqueeWidths);
+
+let marqueeResizeTimer;
+addEventListener("resize", () => {
+  clearTimeout(marqueeResizeTimer);
+  marqueeResizeTimer = setTimeout(freezeMarqueeWidths, 150);
+});
+
+function glitchSpan(span) {
+  if (!span || span.classList.contains("glitching")) return;
+  if (!span.dataset.text) span.dataset.text = span.textContent;
+
+  span.classList.add("glitching");
+  animate(span, {
+    innerHTML: scrambleText({
+      text: span.dataset.text,
+      chars: GLITCH_CHARS,
+      from: "random",
+      perturbation: 1,
+      duration: 450,
+      ease: "out(2)",
+    }),
+  });
+  setTimeout(() => span.classList.remove("glitching"), 520);
+}
+
+function scheduleMarqueeGlitch() {
+  const delay = 6000 + Math.random() * 9000;
+  setTimeout(() => {
+    glitchSpan(marqueeSpans[Math.floor(Math.random() * marqueeSpans.length)]);
+
+    if (Math.random() < 0.2) {
+      glitchSpan(marqueeSpans[Math.floor(Math.random() * marqueeSpans.length)]);
+    }
+
+    if (Math.random() < 0.15) {
+      marquee.classList.add("glitching");
+      setTimeout(() => marquee.classList.remove("glitching"), 150);
+    }
+
+    scheduleMarqueeGlitch();
+  }, delay);
+}
+
+if (marquee && !reduceMotion) scheduleMarqueeGlitch();
 
 /* ---------- hero intro ---------- */
 

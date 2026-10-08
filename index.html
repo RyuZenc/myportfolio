@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portofolio Dhimas Admaja — Fullstack Developer."
-    />
+    <meta name="description" content="Portfolio Dhimas Admaja." />
     <title>Zenc | Portofolio</title>
     <link rel="icon" href="images/favicon.ico" sizes="any" />
     <link
@@ -33,6 +30,8 @@
     />
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <header class="site-header">
       <div class="container header-inner">
         <a href="#home" class="brand" aria-label="Zenc, ke atas">
@@ -92,9 +91,7 @@
               height="450"
             />
             <figcaption class="sticker">
-              <button type="button" class="sticker-btn">
-                Salam<br />kenal!
-              </button>
+              <button type="button" class="sticker-btn">Hello!</button>
             </figcaption>
           </figure>
         </div>
@@ -259,6 +256,92 @@
         <a href="#home">Ke atas</a>
       </div>
     </footer>
+
+    <div
+      id="scramble-overlay"
+      class="scramble-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Animasi scramble teks"
+      hidden
+    >
+      <div class="scramble-stage">
+        <div class="slide">
+          <div class="row">
+            <p>Kenalan,</p>
+            <p>Halo,</p>
+          </div>
+
+          <div class="row">
+            <p>Kenalkan,</p>
+            <p>Hai,</p>
+            <p>Kenalin,</p>
+          </div>
+
+          <div class="row">
+            <p>Salam kenal,</p>
+            <p>Kenalan yuk,</p>
+            <p>Hai kamu,</p>
+            <p>Kenalkan,</p>
+          </div>
+
+          <div class="row">
+            <p>Halo,</p>
+            <p>Kenalin,</p>
+            <p class="center">Kenalin,</p>
+            <p>Salam kenal,</p>
+            <p>Kenalkan,</p>
+          </div>
+
+          <div class="row">
+            <p>Hai,</p>
+            <p>Kenalan yuk,</p>
+            <p>Kenalin,</p>
+            <p>Halo,</p>
+          </div>
+
+          <div class="row">
+            <p>Kenalkan,</p>
+            <p>Salam kenal,</p>
+            <p>Kenalan,</p>
+          </div>
+
+          <div class="row">
+            <p>Hai,</p>
+            <p>Kenalin,</p>
+          </div>
+        </div>
+        <div class="slide features">
+          <div class="row">
+            <p data-color="3">Frontend</p>
+            <p data-color="8">Backend</p>
+          </div>
+          <div class="row">
+            <p data-color="14">JavaScript</p>
+            <p data-color="0">React</p>
+            <p data-color="6">PHP</p>
+          </div>
+          <div class="row">
+            <p data-color="3">Python</p>
+            <p data-color="16">Git</p>
+            <p data-color="4">Vite</p>
+            <p data-color="1">HTML &amp; CSS</p>
+          </div>
+          <div class="row">
+            <p data-color="11">Animasi UI</p>
+            <p data-color="5">REST API</p>
+            <p data-color="10">Responsif</p>
+          </div>
+          <div class="row">
+            <p data-color="13">Full-Stack</p>
+            <p data-color="2">Interaktif</p>
+          </div>
+        </div>
+        <div class="slide">
+          <p>Butuh web keren?</p>
+        </div>
+      </div>
+    </div>
 
     <script type="module" src="/src/main.js"></script>
   </body>
